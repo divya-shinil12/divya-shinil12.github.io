@@ -1,29 +1,64 @@
 :root{
     --blue : #007bff;
     --dark-blue: #0056b3;
+    --light-blue: #d2e7fd;
     --yellow: #ffef0a;
     --light-gray: #f8f9fa;
+    --dark-gray: #bebebe;
     --black: #121212;
     --white: #ffffff;
     --maroon: #8d0808;
+    --medium-blue: #3498db; 
+    --text-color: #333;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+a {
+    color: var(--medium-blue);
 }
 
 h1 span {
     color: var(--blue);
 }
 
+h1, h2, h3 {
+    font-weight: 700;
+}
+p {
+    font-weight: 300;
+}
+
 .btn-primary {
     background-color: var(--black);
     border: 1px solid var(--light-gray);
-    box-shadow: 2px 2px 2px var(--yellow);
+    box-shadow: 2px 2px 2px var(--light-blue);
 }
 
 .btn-primary:hover {
     background-color: var(--dark-blue);
+}
+
+.btn {
+    background-color: var(--medium-blue);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+}
+
+.card-body{
+    text-align: center;
 }
 
 .nav-item{
@@ -34,18 +69,22 @@ h1 span {
     color: var(--dark-blue);
 }
 
+#projects{
+    background-color: var(--light-blue);
+}
 .card {
     margin-bottom: 30px;
 }
 
 section div.container div.row div.card img{
     height: 300px;  
+    padding: 20px;
 }
 
 .prof-pic{
     display: block;
     margin-top: 90px;
-    border: 1px solid var(--yellow) ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     max-width: 100%;
     height: 100%;
