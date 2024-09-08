@@ -1,0 +1,104 @@
+:root{
+    --blue : #007bff;
+    --dark-blue: #0056b3;
+    --yellow: #ffef0a;
+    --light-gray: #f8f9fa;
+    --black: #121212;
+    --white: #ffffff;
+    --maroon: #8d0808;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1 span {
+    color: var(--blue);
+}
+
+.btn-primary {
+    background-color: var(--black);
+    border: 1px solid var(--light-gray);
+    box-shadow: 2px 2px 2px var(--yellow);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+}
+
+.nav-item{
+    margin-right: 50px;
+}
+
+.nav-link{
+    color: var(--dark-blue);
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+section div.container div.row div.card img{
+    height: 300px;  
+}
+
+.prof-pic{
+    display: block;
+    margin-top: 90px;
+    border: 1px solid var(--yellow) ;
+    border-radius: 50%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.skill-level{
+    width: 100%;
+    background-color: var(--light-gray);
+}  
+
+.skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--white);
+}
+
+#my-skills p{
+    color: var(--maroon);
+    margin-top: 10px;
+}
+
+.html {width: 95%; background-color: var(--blue);}
+.css {width: 95%; background-color: var(--blue);}
+.js {width: 90%; background-color: var(--blue);}
+.react {width: 80%; background-color: var(--blue);}
+.python{width: 60%; background-color: var(--blue);}
+
+.col-md-4{
+    height: 100%;
+}
+
+.col-md-8{
+    text-align: justify;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: var(--light-gray);
+}
